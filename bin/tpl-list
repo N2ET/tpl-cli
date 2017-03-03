@@ -1,0 +1,24 @@
+const R_program = require('commander')
+
+const R_logger = require('../lib/logger')
+const R_list = require('../lib/list')
+const R_config = require('../lib/config')
+
+R_program
+  .usage('[owner] [project-name]')
+  .option('--debug', 'log debug info')
+
+R_program.parse(process.argv)
+
+console.log()
+process.on('exit', function () {
+  console.log()
+})
+
+R_config.parse(R_program)
+if(!R_config.repo.project) {
+  R_list.listAllProjects()
+  return
+}
+
+R_list.listProjectTemplates()
