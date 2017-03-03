@@ -4,7 +4,8 @@
   "description": "a tool for initialling reusable templates",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tpl-init": "node --nolazy --debug-brk=5858 bin/tpl-init webpack"
   },
   "repository": {
     "type": "git",
@@ -23,6 +24,9 @@
     "chalk": "^1.1.3",
     "commander": "^2.9.0",
     "download-git-repo": "^0.2.1",
+    "handlebars": "^4.0.6",
+    "inquirer": "^3.0.6",
+    "metalsmith": "^2.3.0",
     "ora": "^1.1.0",
     "user-home": "^2.0.0"
   }
