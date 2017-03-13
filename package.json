@@ -7,7 +7,7 @@
     "tpl": "./bin/tpl"
   },
   "scripts": {
-
+    "postinstall": "node install.js"
   },
   "repository": {
     "type": "git",
