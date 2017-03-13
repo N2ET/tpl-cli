@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const R_program = require('commander')
 
 const R_logger = require('../lib/logger')

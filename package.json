@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "description": "a tool for initialling reusable templates",
   "main": "index.js",
+  "bin": {
+    "tpl": "./bin/tpl"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "tpl-init": "node --nolazy --debug-brk=5858 bin/tpl-init webpack"
+
   },
   "repository": {
     "type": "git",
