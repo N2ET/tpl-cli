@@ -16,4 +16,6 @@ process.on('exit', function () {
 })
 
 R_config.parse(R_program)
-R_init.init()
+R_logger.debug('config: ', R_config)
+//R_init.init()
+R_init.updateAndInit()

@@ -16,4 +16,5 @@ process.on('exit', function () {
 })
 
 R_config.parse(R_program)
-R_init.init()
+R_init.updateAndInit()
+//R_init.init()
